@@ -1,11 +1,13 @@
 import Logo from "@/components/Logo";
 import Image from "next/image";
 import ArrowDown from "@/components/ArrowDown";
+import profilePic from "../../public/profile_pic.jpg";
+import Section from "@/components/Section";
 
 export default function Home() {
     return (
-        <main className='flex min-h-screen flex-col items-center sm:px-24 px-8 pb-8'>
-            <div className='relative flex flex-col w-full h-screen items-center py-8'>
+        <main className='flex min-h-screen flex-col items-center sm:px-48 px-8 pb-8'>
+            <div className='relative flex flex-col w-full h-screen items-center py-16'>
                 <div className='flex w-full'>
                     <Logo />
                 </div>
@@ -31,6 +33,28 @@ export default function Home() {
                 {/* <ArrowDownIcon className="absolute bottom-8 h-8 w-8 text-teal-400 animate-bounce" /> */}
                 <ArrowDown />
             </div>
+
+            <Section header='About Me'>
+                <div className='flex sm:flex-row flex-col sm:items-start items-center pt-8 gap-4'>
+                    <Image
+                        src={profilePic}
+                        alt='Kirk Espina profile picture'
+                        className='h-64 w-64 aspect-square object-cover rounded-lg border-r-4 border-b-4 border-teal-400'
+                    />
+
+                    <div className="text-justify">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, magnam ipsum. Accusamus quia beatae vitae. Asperiores ut maiores id nulla voluptate. Vitae nemo aut amet aperiam libero repudiandae excepturi quod!</p>
+                        <br />
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, magnam ipsum. Accusamus quia beatae vitae. Asperiores ut maiores id nulla voluptate. Vitae nemo aut amet aperiam libero repudiandae excepturi quod!</p>
+                        <br />
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, magnam ipsum. Accusamus quia beatae vitae. Asperiores ut maiores id nulla voluptate. Vitae nemo aut amet aperiam libero repudiandae excepturi quod!</p>
+                    </div>
+                </div>
+            </Section>
+
+            <Section header="Work Experience">
+
+            </Section>
         </main>
     );
 }
