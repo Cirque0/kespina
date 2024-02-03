@@ -1,9 +1,12 @@
+'use client';
+
 import Logo from "@/components/Logo";
 import Image from "next/image";
 import ArrowDown from "@/components/ArrowDown";
 import profilePic from "../../public/profile_pic.jpg";
 import Section from "@/components/Section";
 import { Space_Mono } from "next/font/google";
+import Experience from "@/components/Experience";
 
 const spaceMono = Space_Mono({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -56,7 +59,14 @@ export default function Home() {
             </Section>
 
             <Section header="Work Experience" id='experience'>
-
+                <div className="flex flex-col pt-8">
+                    <Experience>
+                        <Experience.Period>Apr 2023 &mdash; Jun 2023</Experience.Period>
+                        <Experience.Company>Lamina Studios</Experience.Company>
+                        <Experience.Position>Full-stack Web Developer Intern</Experience.Position>
+                        <Experience.Content>Collaborated with fellow student interns to design and develop a website for Lamina Studios. Mainly focused on back-end development, while also delivering significant contribution on the front-end.</Experience.Content>
+                    </Experience>
+                </div>
             </Section>
         </main>
     );
