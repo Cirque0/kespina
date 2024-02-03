@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Logo from "@/components/Logo";
 import Image from "next/image";
@@ -8,7 +8,7 @@ import Section from "@/components/Section";
 import { Space_Mono } from "next/font/google";
 import Experience from "@/components/Experience";
 
-const spaceMono = Space_Mono({ subsets: ['latin'], weight: ['400', '700'] });
+const spaceMono = Space_Mono({ subsets: ["latin"], weight: ["400", "700"] });
 
 export default function Home() {
     return (
@@ -19,14 +19,23 @@ export default function Home() {
                 </div>
 
                 <div className='flex flex-col mt-48 items-center justify-center gap-2 text-center'>
-                    <p className={'sm:text-5xl text-3xl ' + spaceMono.className}>
+                    <p
+                        className={
+                            "sm:text-5xl text-3xl " + spaceMono.className
+                        }
+                    >
                         Hi, I'm{" "}
                         <span className='font-semibold text-teal-400'>
                             Kirk Espina
                         </span>
                         ,
                     </p>
-                    <p className={'text-xl font-medium underline underline-offset-8 decoration-teal-400 ' + spaceMono.className}>
+                    <p
+                        className={
+                            "text-xl font-medium underline underline-offset-8 decoration-teal-400 " +
+                            spaceMono.className
+                        }
+                    >
                         a full-stack web developer.
                     </p>
                     <p className='max-w-2xl mt-4'>
@@ -48,23 +57,51 @@ export default function Home() {
                         className='h-64 w-64 aspect-square object-cover rounded-lg border-r-4 border-b-4 border-teal-400'
                     />
 
-                    <div className="text-justify">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, magnam ipsum. Accusamus quia beatae vitae. Asperiores ut maiores id nulla voluptate. Vitae nemo aut amet aperiam libero repudiandae excepturi quod!</p>
+                    <div className='text-justify'>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Beatae, magnam ipsum. Accusamus quia beatae
+                            vitae. Asperiores ut maiores id nulla voluptate.
+                            Vitae nemo aut amet aperiam libero repudiandae
+                            excepturi quod!
+                        </p>
                         <br />
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, magnam ipsum. Accusamus quia beatae vitae. Asperiores ut maiores id nulla voluptate. Vitae nemo aut amet aperiam libero repudiandae excepturi quod!</p>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Beatae, magnam ipsum. Accusamus quia beatae
+                            vitae. Asperiores ut maiores id nulla voluptate.
+                            Vitae nemo aut amet aperiam libero repudiandae
+                            excepturi quod!
+                        </p>
                         <br />
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, magnam ipsum. Accusamus quia beatae vitae. Asperiores ut maiores id nulla voluptate. Vitae nemo aut amet aperiam libero repudiandae excepturi quod!</p>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Beatae, magnam ipsum. Accusamus quia beatae
+                            vitae. Asperiores ut maiores id nulla voluptate.
+                            Vitae nemo aut amet aperiam libero repudiandae
+                            excepturi quod!
+                        </p>
                     </div>
                 </div>
             </Section>
 
-            <Section header="Work Experience" id='experience'>
-                <div className="flex flex-col pt-8">
+            <Section header='Work Experience' id='experience'>
+                <div className='flex flex-col pt-8'>
                     <Experience>
-                        <Experience.Period>Apr 2023 &mdash; Jun 2023</Experience.Period>
+                        <Experience.Period>
+                            Apr 2023 &mdash; Jun 2023
+                        </Experience.Period>
                         <Experience.Company>Lamina Studios</Experience.Company>
-                        <Experience.Position>Full-stack Web Developer Intern</Experience.Position>
-                        <Experience.Content>Collaborated with fellow student interns to design and develop a website for Lamina Studios. Mainly focused on back-end development, while also delivering significant contribution on the front-end.</Experience.Content>
+                        <Experience.Position>
+                            Full-stack Web Developer Intern
+                        </Experience.Position>
+                        <Experience.Content>
+                            Collaborated with fellow student interns to design
+                            and develop a website for Lamina Studios. Mainly
+                            focused on back-end development, while also
+                            delivering significant contribution on the
+                            front-end.
+                        </Experience.Content>
                     </Experience>
                 </div>
             </Section>
