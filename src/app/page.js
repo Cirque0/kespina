@@ -17,7 +17,7 @@ export default function Home() {
                         </span>
                         ,
                     </p>
-                    <p className='text-2xl font-medium'>
+                    <p className='text-2xl font-medium underline underline-offset-8 decoration-teal-500'>
                         a full-stack web developer.
                     </p>
                     <p className='max-w-2xl'>
