@@ -3,6 +3,9 @@ import Image from "next/image";
 import ArrowDown from "@/components/ArrowDown";
 import profilePic from "../../public/profile_pic.jpg";
 import Section from "@/components/Section";
+import { Space_Mono } from "next/font/google";
+
+const spaceMono = Space_Mono({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function Home() {
     return (
@@ -13,14 +16,14 @@ export default function Home() {
                 </div>
 
                 <div className='flex flex-col mt-48 items-center justify-center gap-2 text-center'>
-                    <p className='sm:text-5xl text-3xl'>
+                    <p className={'sm:text-5xl text-3xl ' + spaceMono.className}>
                         Hi, I'm{" "}
                         <span className='font-semibold text-teal-400'>
                             Kirk Espina
                         </span>
                         ,
                     </p>
-                    <p className='text-lg font-medium underline underline-offset-8 decoration-teal-400'>
+                    <p className={'text-xl font-medium underline underline-offset-8 decoration-teal-400 ' + spaceMono.className}>
                         a full-stack web developer.
                     </p>
                     <p className='max-w-2xl mt-4'>
