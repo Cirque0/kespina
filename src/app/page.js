@@ -37,7 +37,7 @@ export default function Home() {
                 <ArrowDown />
             </div>
 
-            <Section header='About Me'>
+            <Section header='About Me' id='aboutme'>
                 <div className='flex sm:flex-row flex-col sm:items-start items-center pt-8 gap-4'>
                     <Image
                         src={profilePic}
@@ -55,7 +55,7 @@ export default function Home() {
                 </div>
             </Section>
 
-            <Section header="Work Experience">
+            <Section header="Work Experience" id='experience'>
 
             </Section>
         </main>
