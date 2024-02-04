@@ -14,7 +14,7 @@ const Experience = ({ children, className = "", ...props }) => {
 
     return (
         <div
-            className={"flex sm:flex-row flex-col gap-4 " + className}
+            className={"flex md:flex-row flex-col md:gap-4 " + className}
             {...props}
         >
             {period}
@@ -31,7 +31,7 @@ const Period = ({ children, className = "", ...props }) => {
     return (
         <p
             className={
-                "w-60 mt-1 shrink-0 text-sm uppercase tracking-widest text-gray-400 sm:text-right " +
+                "w-60 mt-1 shrink-0 text-sm uppercase tracking-widest text-gray-400 md:text-right " +
                 className
             }
             {...props}

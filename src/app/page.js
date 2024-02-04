@@ -12,9 +12,9 @@ const spaceMono = Space_Mono({ subsets: ["latin"], weight: ["400", "700"] });
 
 export default function Home() {
     return (
-        <main className='flex min-h-screen flex-col items-center sm:px-48 px-8 pb-8'>
+        <main className='flex min-h-screen flex-col items-center px-8 pb-8'>
             <div className='relative flex flex-col w-full h-screen items-center py-16'>
-                <div className='flex w-full'>
+                <div className='flex w-full max-w-7xl'>
                     <Logo />
                 </div>
 
@@ -50,7 +50,7 @@ export default function Home() {
             </div>
 
             <Section header='About Me' id='aboutme'>
-                <div className='flex sm:flex-row flex-col sm:items-start items-center pt-8 gap-4'>
+                <div className='flex md:flex-row flex-col md:items-start items-center pt-8 gap-4'>
                     <Image
                         src={profilePic}
                         alt='Kirk Espina profile picture'
