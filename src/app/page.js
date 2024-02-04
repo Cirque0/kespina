@@ -4,16 +4,18 @@ import Logo from "@/components/Logo";
 import Image from "next/image";
 import ArrowDown from "@/components/ArrowDown";
 import profilePic from "../../public/profile_pic.jpg";
+import shunjiHome from "../../public/shunji_home.png";
 import Section from "@/components/Section";
 import { Space_Mono } from "next/font/google";
 import Experience from "@/components/Experience";
+import Project from "@/components/Project";
 
 const spaceMono = Space_Mono({ subsets: ["latin"], weight: ["400", "700"] });
 
 export default function Home() {
     return (
-        <main className='flex min-h-screen flex-col items-center px-8 pb-8'>
-            <div className='relative flex flex-col w-full h-screen items-center py-16'>
+        <main className='flex min-h-screen flex-col items-center pb-8'>
+            <div className='relative flex flex-col w-full h-screen items-center px-8 py-16 bg-gray-800 shadow-md'>
                 <div className='flex w-full max-w-7xl'>
                     <Logo />
                 </div>
@@ -103,6 +105,39 @@ export default function Home() {
                             front-end.
                         </Experience.Content>
                     </Experience>
+                </div>
+            </Section>
+
+            <Section header='Projects' id='projects' className='max-w-4xl'>
+                <div className='flex flex-col pt-8'>
+                    <Project
+                        title={"Shunji Flash Cards"}
+                        img={{
+                            src: shunjiHome,
+                            alt: "Screenshot of Shunji home page",
+                        }}
+                    >
+                        <p>
+                            A flash cards web application with which users can
+                            create and share decks of flash cards, and use as a
+                            learning tool, keeping score for themselves as the
+                            cards are flashed.
+                        </p>
+                    </Project>
+                    <Project
+                        title={"Shunji Flash Cards"}
+                        img={{
+                            src: shunjiHome,
+                            alt: "Screenshot of Shunji home page",
+                        }}
+                    >
+                        <p>
+                            A flash cards web application with which users can
+                            create and share decks of flash cards, and use as a
+                            learning tool, keeping score for themselves as the
+                            cards are flashed.
+                        </p>
+                    </Project>
                 </div>
             </Section>
         </main>
