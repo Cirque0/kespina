@@ -2,6 +2,7 @@
 
 import Logo from "@/components/Logo";
 import Image from "next/image";
+import Link from "next/link";
 import ArrowDown from "@/components/ArrowDown";
 import profilePic from "../../public/profile_pic.jpg";
 import shunjiHome from "../../public/shunji_home.png";
@@ -15,9 +16,20 @@ const spaceMono = Space_Mono({ subsets: ["latin"], weight: ["400", "700"] });
 export default function Home() {
     return (
         <main className='flex min-h-screen flex-col items-center pb-8'>
-            <div className='relative flex flex-col w-full h-screen items-center px-8 py-16 bg-gray-800 shadow-md'>
-                <div className='flex w-full max-w-7xl'>
+            <div className='relative flex flex-col w-full h-screen items-center px-8 py-8 bg-gray-800 shadow-md'>
+                <div className='flex w-full max-w-7xl items-baseline justify-between'>
                     <Logo />
+                    <ul className={"flex gap-4 " + spaceMono.className}>
+                        <li>
+                            <a href={'/#aboutme'} className="hover:text-teal-400 transition-all">About Me</a>
+                        </li>
+                        <li>
+                            <a href="/#experience" className="hover:text-teal-400 transition-all">Experience</a>
+                        </li>
+                        <li>
+                            <a href="/#projects" className="hover:text-teal-400 transition-all">Project</a>
+                        </li>
+                    </ul>
                 </div>
 
                 <div className='flex flex-col mt-48 items-center justify-center gap-2 text-center'>
